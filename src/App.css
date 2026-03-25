@@ -1,12 +1,9 @@
 /* src/App.css */
 
 :root {
-  /* Fondos con un toque de azul suave, no negro */
-  --bg-surface:     #f8fafc; /* Blanco azulado muy limpio */
-  --bg-elevated:    #ffffff; /* Blanco puro para las tarjetas */
-  --bg-editing:     #fffbeb; /* Crema suave para cuando edites */
-  
-  /* Bordes y Divisiones */
+  --bg-surface:     #f8fafc;
+  --bg-elevated:    #ffffff; 
+  --bg-editing:     #fffbeb; 
   --border:         #e2e8f0;
   --border-strong:  #cbd5e1;
   
@@ -21,12 +18,10 @@
   --warn-dim:       #fffbeb;
   --danger:         #ef4444;
   
-  /* Texto (Gris muy oscuro, evita el negro puro) */
   --text-primary:   #1e293b;
   --text-secondary: #64748b;
   --text-muted:     #94a3b8;
 
-  /* Bordes y Sombras */
   --radius-md:      12px;
   --radius-sm:      8px;
   --shadow-sm:      0 1px 3px rgba(0,0,0,0.1);
