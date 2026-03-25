@@ -1,24 +1,14 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import styles from '../Formulario.module.css';
 
 const Formulario = ({ onGuardar, usuarioEditando, setUsuarioEditando }) => {
-    const [nombre, setNombre] = useState('');
-    const [email, setEmail] = useState('');
-    const [rol, setRol] = useState('empleado');
-    const [sueldo, setSueldo] = useState('');
+    const [nombre, setNombre] = useState(usuarioEditando?.nombre || '');
+    const [email, setEmail] = useState(usuarioEditando?.email || '');
+    const [rol, setRol] = useState(usuarioEditando?.rol || 'empleado');
+    const [sueldo, setSueldo] = useState(usuarioEditando?.sueldo || '');
     const [error, setError] = useState('');
 
     const isEditing = Boolean(usuarioEditando);
-
-    useEffect(() => {
-        if (usuarioEditando) {
-            setNombre(usuarioEditando.nombre || '');
-            setEmail(usuarioEditando.email || '');
-            setRol(usuarioEditando.rol || 'empleado');
-            setSueldo(usuarioEditando.sueldo || '');
-            setError(''); 
-        }
-    }, [usuarioEditando]);
 
     const limpiar = () => {
         setNombre(''); setEmail(''); setSueldo(''); setRol('empleado');

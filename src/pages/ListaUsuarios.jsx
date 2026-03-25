@@ -39,6 +39,7 @@ const ListaUsuarios = () => {
             {/* ─── Formulario ─────────────────── */}
             <div className={styles.formCard}>
                 <Formulario
+                    key={usuarioEditando?.id ?? 'new'}
                     onGuardar={guardarCambios}
                     usuarioEditando={usuarioEditando}
                     setUsuarioEditando={setUsuarioEditando}
