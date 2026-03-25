@@ -1,4 +1,6 @@
 /* src/App.css */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700&display=swap');
+
 :root {
   /* Fondos con un toque de azul suave, no negro */
   --bg-surface:     #f8fafc; /* Blanco azulado muy limpio */
@@ -73,8 +75,6 @@ body {
   border: none;
   margin-bottom: 30px;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700&display=swap');
 
 body {
   margin: 0;
